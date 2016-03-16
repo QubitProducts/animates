@@ -1,0 +1,37 @@
+{
+  "name": "animates",
+  "version": "0.0.1",
+  "description": "A tiny, performant replacement for jquery/animate using css3",
+  "main": "lib/animates.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/karma start --single-run && node_modules/.bin/standard",
+    "start": "node_modules/.bin/serve -p 1234"
+  },
+  "author": {
+    "name": "Alan Clarke",
+    "email": "alan@qubit.com",
+    "url": "qubit.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qubitdigital/animates.git"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "require1k": "stuk/require1k",
+    "serve": "^1.4.0",
+    "standard": "^6.0.8",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {}
+}
