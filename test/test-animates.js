@@ -13,11 +13,11 @@ describe('animate', function () {
 
   it('should camel case style declarations', function (done) {
     animates(el, { opacity: 0 }, { speed: 100 })
-    setTimeout(middle, 0)
+    setTimeout(middle, 10)
     setTimeout(end, 200)
 
     function middle () {
-      expect(el.style.transition).to.eql('all 0.1s')
+      expect(el.style.transition).to.eql('opacity 0.1s')
     }
 
     function end () {
