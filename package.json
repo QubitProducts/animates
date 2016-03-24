@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qubitdigital/animates.git"
+    "url": "git+https://github.com/QubitProducts/animates.git"
   },
   "license": "UNLICENSED",
   "devDependencies": {
