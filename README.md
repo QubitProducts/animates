@@ -13,7 +13,7 @@ npm install animates
 var animates = require('animates')
 
 function fadeOut (el) {
-  animates(el, { opacity: 0 })
+  return animates(el, { opacity: 0 })
 }
 /*
 options:
@@ -21,6 +21,10 @@ options:
 - delay (ms)
 - easing (e.g. 'ease', 'linear', 'ease-in', 'ease-out', 'ease-in-out' etc.)
 */
+
+// cancel animation:
+var stop = animates(el, { opacity: 0 })
+stop()
 ```
 
 ## demo

@@ -30,6 +30,7 @@
     "mocha": "^2.4.5",
     "require1k": "stuk/require1k",
     "serve": "^1.4.0",
+    "sinon": "^2.0.0-pre",
     "standard": "^6.0.8",
     "webpack": "^1.12.14"
   },
