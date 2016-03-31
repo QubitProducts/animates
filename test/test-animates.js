@@ -17,22 +17,27 @@ describe('animate', function () {
     clock.restore()
   })
 
-  it('should camel case style declarations', function () {
+  it('should set css props and transition after a short defer', function () {
     animates(el, { opacity: 0 }, { speed: 100 })
     clock.tick(1)
     expect(el.style.transition).to.eql('opacity 0.1s')
-    clock.tick(100)
     expect(el.style.opacity).to.eql('0')
+  })
+
+  it('should cleanup afterwards', function () {
+    animates(el, { opacity: 0 }, { speed: 100 })
+    clock.tick(101)
     expect(el.style.transition).to.eql('')
   })
 
-  it('should be cancelable', function () {
+  it('should be cancellable', function () {
     var style = el.getAttribute('style')
     var stop = animates(el, { opacity: 0 }, { speed: 100 })
     stop()
     clock.tick(101)
     expect(el.getAttribute('style')).to.eql(style)
   })
+
   it('should remove transitions if appropriate', function () {
     el.style.opacity = 0
     var style = el.getAttribute('style')
