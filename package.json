@@ -1,6 +1,6 @@
 {
   "name": "animates",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A tiny, performant replacement for jquery/animate using css3",
   "main": "lib/animates.js",
   "directories": {
