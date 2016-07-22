@@ -1,6 +1,6 @@
 {
   "name": "animates",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Tiny, performant api for easy css3 animations",
   "main": "lib/animates.js",
   "directories": {
