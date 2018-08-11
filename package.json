@@ -4,6 +4,7 @@
   "description": "Tiny, performant api for easy css3 animations",
   "main": "lib/animates.js",
   "directories": {
+    "lib": "lib",
     "test": "test"
   },
   "scripts": {
